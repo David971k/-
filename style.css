@@ -1,12 +1,58 @@
+@font-face {
+    font-family: 'El Messiri';
+    src: url(./assets/fonts/ElMessiri.ttf);
+    font-weight: 400;
+}
+
+/* общие стилевые решения */
+
 *{
     padding: 0;
     margin: 0;
+    font-family: 'El Messiri';
 }
 
-@font-face {
-    font-family: El Messiri;
-    src: url(./assets/fonts/ElMessiri.ttf);
+button{
+    border: none;
+    border-radius: 12px;
+    background-color: #D9D9D9;
+    font-size: 40px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
+
+button:hover
+{
+    box-shadow: inset 1px 1px 8px -1px
+}
+
+button:active
+{
+    box-shadow: inset 1px 1px 20px -1px
+}
+
+.block
+{
+    margin-bottom: 16px;    
+}
+
+p{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 50.02px;
+}
+
+h2{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100.03px;
+}
+
+/* конец общих стилевых решений */
+
+/* хедер сайта */
 
 header
 {
@@ -33,42 +79,20 @@ header .butons
     gap: 19px;
 }
 
-.buton1{
-    height: 52px;
+header button
+{
     width: 288px;
-    border-radius: 12px;
-    background-color: #D9D9D9;
-    font-family: El Messiri;
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
+    height: 52px;
 }
 
-.buton2{
-    height: 52px;
-    width: 288px;
-    border-radius: 12px;
-    background-color: #D9D9D9;
-    font-family: El Messiri;
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.buton3{
-    width: 709px;
-    height: 52px;
-    border-radius: 12px;
-    background-color: #D9D9D9;
-    font-family: El Messiri;
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
+header button:last-child
+{
+    max-width: 712px;
+    width: 100%;
 }
 
 header p
 {
-    font-family: El Messiri;
     font-size: 64px;
     font-weight: 700;
     line-height: 100.03px;
@@ -76,11 +100,11 @@ header p
     color: white;
 }
 
-
+/* конец хедера */
 
 .divNav{
     height: 567px;
-    background-image: url(./assets/img/image\ 1.png);
+    background-image: url(./assets/img/image1.png);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -93,18 +117,8 @@ header p
 }
 
 .divNav h2{
-    font-family: El Messiri;
-    font-size: 64px;
     font-weight: 600;
-    line-height: 100.03px;
     text-align: left;
-}
-
-.divNav > div p{
-    font-family: El Messiri;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 50.02px;
 }
 
 nav{
@@ -120,9 +134,7 @@ nav{
 }
 
 nav p{
-    font-family: El Messiri;
     font-size: 40px;
-    font-weight: 700;
     line-height: 62.52px;
     text-align: center;
     margin-bottom: 10px;
@@ -132,19 +144,13 @@ nav p{
 nav button{
     width: 481px;
     height: 67px;
-    border-radius: 12px;
-    font-family: El Messiri;
-    font-size: 40px;
-    font-weight: 700;
     line-height: 62.52px;
-    text-align: center;
 }
 
 
 
 .timeMachine{
     height: 768px;
-    margin-top: 16px;
     background-color: #222222;
     display: flex;
     flex-direction: column;
@@ -153,20 +159,12 @@ nav button{
 }
 
 .timeMachine h2{
-    font-family: El Messiri;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 100.03px;
     text-align: center;
     color: white;
 }
 
 .timeMachine p{
     width: 1022px;
-    font-family: El Messiri;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 50.02px;
     text-align: left;
     color: white;
 }
@@ -180,7 +178,6 @@ nav button{
 
 
 .ourCalculations{
-    margin-top: 16px;
     height: 736px;
     display: flex;
     flex-direction: column;
@@ -189,10 +186,6 @@ nav button{
 }
 
 .ourCalculations h2{
-    font-family: El Messiri;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 100.03px;
     text-align: center;
     color: white;
 }
@@ -213,9 +206,7 @@ nav button{
 }
 
 .ourCalculations > div > div p{
-    font-family: El Messiri;
     font-size: 36px;
-    font-weight: 700;
     line-height: 56.27px;
     text-align: center;
 }
@@ -231,7 +222,6 @@ nav button{
 
 
 .Journeys{
-    margin-top: 16px;
     height: 835px;
     background: #222222;
     display: flex;
@@ -240,10 +230,6 @@ nav button{
 }
 
 .Journeys h2{
-    font-family: El Messiri;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 100.03px;
     text-align: center;
     color: white;
 }
@@ -254,7 +240,6 @@ nav button{
 }
 
 .Journeys p{
-    font-family: El Messiri;
     font-size: 36px;
     font-weight: 400;
     line-height: 56.27px;
