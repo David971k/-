@@ -84,10 +84,39 @@
                 </div>
             </div>
         </div>
+
+        <div class="question block">
+            <h2>Задайте свой вопрос!</h2>
+            <div>
+                <form action="#">
+                    <input placeholder="Введите имя..." type="text" name="userName" required>
+                    <input placeholder="Введите почту..." type="email" name="userEmail" required>
+                    <select name="quest" id="q">
+                        <option value="" disabled selected hidden >Выберите категорию вопроса...</option> <!--что-то вроде placeholder для select-->
+                        <option value="quest1">Что произойдет, если изменить прошлое с помощью машины времени?</option>
+                        <option value="quest2">Можно ли создать парадокс времени при путешествии в прошлое?</option>
+                        <option value="quest3">Какие технологии используются для машины времени?</option>
+                        <option value="quest4">Существует ли угроза изменения будущего при путешествии в прошлое?</option>
+                        <option value="quest5">Можно ли предотвратить катастрофы с помощью машины времени?</option>
+                        <option value="quest6">Как путешествие во времени влияет на психологию человека?</option>
+                    </select>
+                    <textarea placeholder="Введите ваш вопрос..." name="" id="" cols="30" rows="10" required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+                <div class="img">
+                    <img class="upperRight" src="./assets/img/image8.png" alt="Здесь должна была быть картинка">
+                    <img class="lowerLeft" src="./assets/img/image7.png" alt="Здесь должна была быть картинка">
+                </div>
+            </div>
+        </div>
     </main>
 <!--------------------------------------------------------------------------------------->
     <footer>
-
+        <img src="./assets/img/logo.svg" alt="Здесь должна была быть картинка">
+        <div class="header">
+            <p>ООО «Тайм Трэвел»</p>
+            <p>2024. Все права защищены.</p>
+        </div>  
     </footer>
 </body>
 </html>
