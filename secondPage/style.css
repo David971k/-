@@ -96,20 +96,22 @@ header > a
 
 header .butons
 {
+    height: 120px;
     display: flex;
     flex-wrap: wrap;
     width: 712px;
     justify-content: space-between;
-    gap: 19px;
+    align-items: center;
+    gap: 10px;
 }
 
 header button
 {
-    width: 288px;
+    width: 350px;
     height: 52px;
 }
 
-header button:last-child
+header button:first-child
 {
     max-width: 712px;
     width: 100%;

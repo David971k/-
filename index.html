@@ -9,32 +9,34 @@
 </head>
 <body>
     <header>
-        <div>
-            <a class="logo" href="index.html"><img src="./assets/img/logo.svg" alt="Здесь должна была быть картинка"></a>
-            <div class="header">
-            <div class="butons">
-                <button><a href="#">Возможности машины времени</a></button>
-                <button><a href="./thirstPage/index.html">Обо мне</a></button>
-                <button><a href="./secondPage/index.html">Путешествия</a></button>
-            </div>
-            </div>
-        </div>
-        <div class="divNav block">
+        <div>     <!-- чтобы сделать картину затемноной -->
             <div>
-                <h2>Отправляйтесь в путешествие во времени</h2>
-                <p>
-                    Интересуетесь загадками прошлого, настоящего и <br> 
-                    будущего? Хотите узнать больше о возможности <br> 
-                    путешествия во времени? Вы на верном пути!
-                </p>
+                <a class="logo" href="index.html"><img src="./assets/img/logo.svg" alt="Здесь должна была быть картинка"></a>
+                <div class="header">
+                <div class="butons">
+                    <button><a href="#">Возможности машины времени</a></button>
+                    <button><a href="./thirstPage/index.html">Обо мне</a></button>
+                    <button><a href="./secondPage/index.html">Путешествия</a></button>
+                </div>
+                </div>
             </div>
-            <nav>
-                <p>Быстрая навигация</p>
-                <button><a href="#">Строение машины</a></button>
-                <button><a href="#">Расчеты</a></button>
-                <button><a href="#">Путешествия</a></button>
-                <button><a href="#">Подать заявку</a></button>
-            </nav>
+            <div class="divNav block">
+                <div>
+                    <h2>Отправляйтесь в путешествие во времени</h2>
+                    <p>
+                        Интересуетесь загадками прошлого, настоящего и <br> 
+                        будущего? Хотите узнать больше о возможности <br> 
+                        путешествия во времени? Вы на верном пути!
+                    </p>
+                </div>
+                <nav>
+                    <p>Быстрая навигация</p>
+                    <button><a href="#">Строение машины</a></button>
+                    <button><a href="#">Расчеты</a></button>
+                    <button><a href="#">Путешествия</a></button>
+                    <button><a href="#">Подать заявку</a></button>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -91,7 +93,8 @@
                 <form action="#">
                     <input placeholder="Введите имя..." type="text" name="userName" required>
                     <input placeholder="Введите почту..." type="email" name="userEmail" required>
-                    <select name="quest" id="q">
+                    <div class="custom-select">
+                    <select name="quest" id="custom-select">
                         <option value="" disabled selected hidden >Выберите категорию вопроса...</option> <!--что-то вроде placeholder для select-->
                         <option value="quest1">Что произойдет, если изменить прошлое с помощью машины времени?</option>
                         <option value="quest2">Можно ли создать парадокс времени при путешествии в прошлое?</option>
@@ -100,6 +103,8 @@
                         <option value="quest5">Можно ли предотвратить катастрофы с помощью машины времени?</option>
                         <option value="quest6">Как путешествие во времени влияет на психологию человека?</option>
                     </select>
+                    <img src="./assets/img/arrow.svg" alt="">
+                </div>
                     <textarea placeholder="Введите ваш вопрос..." name="" id="" cols="30" rows="10" required></textarea>
                     <button type="submit">Отправить</button>
                 </form>
@@ -121,5 +126,6 @@
     </div>
     <button><a href="#">Принять участие</a></button>
 </footer>
+<script src="./afsd.js"></script>
 </body>
 </html>
