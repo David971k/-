@@ -20,22 +20,13 @@ main{
     padding-bottom: 85px;
 }
 
-main > div{
-    display: flex;
-    justify-content: center;
-}
-
-main > img{
-    display: inline-block;
-}
-
-
 p{
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 56.27px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 54.71px;
     color: white;
 }
+
 
 a{
     text-decoration: none;
@@ -52,17 +43,19 @@ button{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    &:hover
+    {
+        box-shadow: inset 1px 1px 8px -1px
+    }
+    
+    &:active
+    {
+        box-shadow: inset 1px 1px 20px -1px
+    }
 }
 
-button:hover
-{
-    box-shadow: inset 1px 1px 8px -1px
-}
 
-button:active
-{
-    box-shadow: inset 1px 1px 20px -1px
-}
 
 button a{
     text-align: center;
@@ -77,9 +70,8 @@ h2{
     font-weight: 700;
     line-height: 100.03px;
     text-align: center;
-    padding-top: 117px;
-    padding-bottom: 20px;
-    margin-bottom: -50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 /* конец общих стилевых решений */
@@ -136,100 +128,152 @@ header p
     color: white;
 }
 
+header > img{
+    position: absolute;
+    right: 44px;
+    top: 113px;
+}
+
 /* конец хедера */
 
 
 
-.egypt{
-    display: grid;
-    gap: 72px;
+/* начало main*/
+
+.opportunities > div > div p{
+    text-align: center;
 }
 
-.egypt .text{
+.opportunities{
+    display: flex;
+    flex-direction: column;
+}
+
+.opportunities > div{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.egypt .text > p{
-    text-align: left;
-    width: 836px;
+.opportunities > div > p{
+    width: 701px;
 }
 
-.egypt .picture > p{
-    text-align: center;
+
+
+
+
+
+
+.list{
+    position: relative;
 }
 
-.egypt .image{
+.list > img{
+    position: absolute;
+    left: 96px;
+    transform: translate(0, -50px);
+}
+
+.list > div:first-of-type > div{
     display: flex;
     justify-content: space-around;
+}
+
+.list h2{
+    margin-left: 140px;
+}
+
+.list > div:first-of-type p{
     text-align: center;
 }
 
+.koroleva{
+    text-align: center;
+    margin-left: -65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
 
-
-
-.greece{
+.leonardo{
+    text-align: center;
     display: grid;
-    gap: 72px;
+    gap: 50px;
 }
 
-.greece .text{
+.list > div:last-child > div > div{
+    width: 732px;
+    height: 491px;
+    border-radius: 42px;
+    background: #D9D9D9;
     display: flex;
-    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.list > div:last-child > div{
+    display: flex;
     justify-content: space-around;
+}
+
+.list > div:last-child > div > div p{
+    text-align: center;
+    color: black;
+}
+
+.list > div:last-child img{
+    position: absolute;
+    right: 49px;
+}
+
+
+
+
+
+
+
+.safetyPrecautions div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.safetyPrecautions > div div{
+    height: 353px;
+    width: 626px;
+    border-radius: 42px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.greece .text > p{
-    text-align: right;
-    width: 737px;
-}
-
-.greece .picture > p{
+.safetyPrecautions p{
     text-align: center;
+    color: black;
+    font-size: 32px;
+    line-height: 50.02px;
 }
 
-.greece .image{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+.safetyPrecautions > div div:nth-child(odd){
+    margin-right: 110px;
 }
 
-
-
-
-
-.paris{
-    display: grid;
-    gap: 72px;
-}
-
-.paris .text{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.paris .text > p{
-    text-align: left;
-    width: 914px;
-}
-
-.paris .picture > p{
-    text-align: center;
-}
-
-.paris .image{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+.safetyPrecautions img{
+    position: absolute;
+    transform: translate(0, 170px);
 }
 
 
 
 
 
+
+
+/*начало footer*/
 footer{
     position: relative;
     background: #222222;

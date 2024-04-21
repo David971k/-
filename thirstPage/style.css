@@ -68,7 +68,7 @@ button:active
 header
 {
     position: relative;
-    background: rgba(34, 34, 34, 1);
+    background: #222222;
     display: flex;
     justify-content: center;
     height: 235px;
@@ -90,6 +90,7 @@ header .butons
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    margin-top: 73px;
 }
 
 header button
