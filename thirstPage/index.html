@@ -44,7 +44,7 @@
                 <img src="../assets/img/Старик.png" alt="Здесь должна была быть картинка">
             </div>
         </section>
-        <section class="rezume">
+        <section class="rezume" id="rezume">
             <h2>Хотите помочь Профессору Игнатию в его делах? Заполните <br> заявку и мы ее обязательно рассмотрим!</h2>
             <div>
                 <div class="picture">
@@ -75,7 +75,12 @@
                 <a href="tel:+78005553535"><span>8-(800)555-35-35</span></a>
             </p>
         </div>
-        <button><a href="#">Принять участие</a></button>
+        <button><a href="#rezume">Принять участие</a></button>
     </footer>
+    <script>
+        document.querySelector('form').addEventListener('submit', event => {
+            alert('Форма отправлена!');
+        });
+    </script>    
 </body>
 </html>
