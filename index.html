@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="overlay" id="overlay" onclick="closeOver()"></div>
     <header>
         <div>     <!-- чтобы сделать картину затемноной -->
             <div>
@@ -20,7 +21,7 @@
                 </div>
                 </div>
             </div>
-            <div class="burger_menu">
+            <div class="burger_menu" onclick="burger_click()">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -47,11 +48,25 @@
         </div>
     </header>
 
-    
+
+    <div class="osnova">
+        <div>
+            <a class="logo" href="index.html"><img src="./assets/img/logo.svg" alt="Здесь должна была быть картинка"></a>
+            <img src="./assets/img/крестик.svg" alt="крестик" onclick="closeOver()">
+        </div>
+        <div class="butons1">
+            <button><a href="./4Page/index.html">Возможности машины времени</a></button>
+            <button><a href="./thirstPage/index.html">Обо мне</a></button>
+            <button><a href="./secondPage/index.html">Путешествия</a></button>
+            <button><a href="./secondPage/index.html">Главная страница</a></button>
+        </div>
+        <p>
+            <a href="#">ООО «Тайм Трэвел» <br> 2024. Все права защищены.</a> <br>
+            <a href="tel:+78005553535"><span>8-(800)555-35-35</span></a>
+        </p>
+    </div>
  <!-------------------------------------------------------------------------------------->
     <main>
-        <hr>
-        <!-- <div class="linia_adaptiv"></div> -->
         <div class="timeMachine block" id="timeMachine">
             <h2>Машина времени</h2>
             <div>
@@ -64,7 +79,7 @@
             </div>
         </div>
 
-        <!-- <div class="linia_adaptiv"></div> -->
+
         <div class="ourCalculations block" id="ourCalculations">
             <h2>Наши расчеты</h2>
             <div>
@@ -79,7 +94,7 @@
             </div>
         </div>
 
-        <!-- <div class="linia_adaptiv"></div> -->
+
         <div class="Journeys block" id="Journeys">
             <h2>Путешествия</h2>
             <div>
@@ -92,13 +107,13 @@
                     <p>Древняя Греция. <br> Театральная площадь</p>
                 </div>
                 <div>
-                    <img src="./assets/img/image5.png" alt="Здесь должна была быть картинка">
+                    <img src="./assets/img/image5.png" alt="Здесь должна была быть картинка" id="parij">
                     <p>Париж. <br> Собор Парижской Богоматери</p>
                 </div>
             </div>
         </div>
 
-        <!-- <div class="linia_adaptiv"></div> -->
+
         <div class="question block" id="question">
             <h2>Задайте свой вопрос!</h2>
             <div>
@@ -144,5 +159,17 @@
         alert('Форма отправлена!');
     });
 </script>
+<script>
+    let element = document.getElementsByClassName("osnova");
+    function burger_click(){
+    element[0].style.display = "flex";
+    document.querySelector(".overlay").style.display = 'block';
+    }
+    function closeOver(){
+        document.getElementById("overlay").style.display = 'none';
+        element[0].style.display = "none";
+    }
+</script>
+<script src="./js.js"></script>
 </body>
 </html>
