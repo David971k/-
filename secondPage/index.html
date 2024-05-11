@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="overlay" id="overlay" onclick="closeOver()"></div>
     <header>
         <a class="logo" href="../index.html"><img src="../assets/img/logo.svg" alt="Здесь должна была быть картинка"></a>
         <div class="header">
@@ -16,13 +17,34 @@
                 <button><a href="../thirstPage/index.html">Обо мне</a></button>
                 <button><a href="index.html">Путешествия</a></button>
             </div>
-        </div>  
+        </div>
+        <div class="burger_menu" onclick="burger_click()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
+
+    <div class="osnova">
+        <div>
+            <a class="logo" href="index.html"><img src="../assets/img/logo.svg" alt="Здесь должна была быть картинка"></a>
+            <img src="../assets/img/крестик.svg" alt="крестик" onclick="closeOver()">
+        </div>
+        <div class="butons1">
+            <button><a href="../4Page/index.html">Возможности машины времени</a></button>
+            <button><a href="../thirstPage/index.html">Обо мне</a></button>
+            <button><a href="../secondPage/index.html">Путешествия</a></button>
+            <button><a href="../index.html">Главная страница</a></button>
+        </div>
+        <p>
+            <a href="#">ООО «Тайм Трэвел» <br> 2024. Все права защищены.</a> <br>
+            <a href="tel:+78005553535"><span>8-(800)555-35-35</span></a>
+        </p>
+    </div>
     <!------------------------------------------------------------------>
     <main>
         <h2>Наши путешествия</h2>
-        <section class="egypt">
-            <img src="" alt="">
+        <section class="egypt block">
             <div class="text">
                 <p>
                     В путешествии в сад фараона Рамсеса II мы 
@@ -45,8 +67,10 @@
                 <div><img src="../assets/img/статуиБогов.png" alt=""><p>Статуи Богов</p></div>
             </div>
         </section>
+
         <div><img src="../assets/img/Линия.png" alt=""></div>
-        <section class="greece">
+
+        <section class="greece block">
             <div class="text">
                 <p>
                     В путешествии в сад древней Греции мы увидели пышные
@@ -67,8 +91,10 @@
                 <div><img src="../assets/img/римскийСад.png" alt=""><p>Римский Сад</p></div>
             </div>
         </section>
+
         <div><img src="../assets/img/Линия.png" alt=""></div>
-        <section class="paris">
+
+        <section class="paris block">
             <div class="text">
                 <p>
                     В путешествии в древний Париж мы восхищались утонченными
@@ -102,5 +128,7 @@
         </div>
         <button><a href="../thirstPage/index.html#rezume">Принять участие</a></button>
     </footer>
+
+    <script src="../burger_menu_click.js"></script>
 </body>
 </html>

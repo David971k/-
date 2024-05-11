@@ -60,6 +60,8 @@ button:active
 }
 
 
+
+
 /* конец общих стилевых решений */
 
 
@@ -81,12 +83,20 @@ header > a
     left: 0;
 }
 
+.header{
+    width: 60%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+}
+
 header .butons
 {
+    width: 100%;
+    max-width: 720px;
     height: 120px;
     display: flex;
     flex-wrap: wrap;
-    width: 712px;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -95,19 +105,19 @@ header .butons
 
 header button
 {
-    width: 350px;
+    width: 45%;
+    max-width: 320px;
     height: 52px;
 }
 
 header button:first-child
 {
-    max-width: 712px;
     width: 100%;
+    max-width: 720px;
 }
 
 header p
 {
-    font-size: 64px;
     font-weight: 700;
     line-height: 100.03px;
     text-align: left;
@@ -355,64 +365,48 @@ footer button{
     margin-right: 79px;
 }
 
-@media (max-width: 992px){
+@media (min-width:1500px) {
+    .header{
+        width: 60%;
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 1500px){
     p{
-        font-size: 14px;
+        font-size: 30px;
         font-weight: 700;
-        line-height: 21.88px;
+        line-height: 45px;
+        text-align: left;
     }
     body{
         background: rgba(217, 217, 217, 1);
     }
 
-    .logo{
-        width: 140px;
-        height: 134px;
-    }
-    .logo img{
-        width: 100%;
-        height: 100%;
-    }
-    header{
-        width: 100%;
-        height: auto;
-    }
-    header .logo{
-        left: auto;
-        right: 0;
-    }
-    .burger_menu{
-        position: absolute;
-        top: 33px;
-        left: 33px;
-        display: grid;
-        gap: 3px;
-    }
-    .burger_menu > div{
-        width: 72px;
-        height: 12px;
-        background: rgba(217, 217, 217, 1);
-    }
-    .header{
-        display: none;
-    }
+    
 
     .My h2{
-        font-size: 32px;
+        font-size: 64px;
         font-weight: 700;
-        line-height: 50.02px;
+        line-height: 100.03px;
+        text-align: center;
         padding: 130px 0 20px 0;
     }
     .My div{
         flex-direction: row-reverse;
     }
     .My img{
-        width: 319px;
-        height: 335px;
+        width: 672px;
+        height: 863px;
         object-fit: cover;
         border-radius: 32px;
     }
     .My p{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: left;
         margin-top: 0;
         width: 47%;
         padding-left: 15px;
@@ -504,6 +498,66 @@ footer button{
     .footer{
         width: 60%;
         justify-content: space-between;
+    }
+}
+
+
+@media (max-width:992px) {
+    .logo{
+        width: 140px;
+        height: 134px;
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    header{
+        width: 100%;
+        height: auto;
+    }
+    header .logo{
+        left: auto;
+        right: 0;
+    }
+    .burger_menu{
+        position: absolute;
+        top: 33px;
+        left: 33px;
+        display: grid;
+        gap: 3px;
+    }
+    .burger_menu > div{
+        width: 72px;
+        height: 12px;
+        background: rgba(217, 217, 217, 1);
+    }
+    .header{
+        display: none;
+    }
+
+
+    .My h2{
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 45px;
+        padding: 70px 0 0 0;
+    }
+    .My div{
+        flex-direction: row-reverse;
+    }
+    .My img{
+        width: 319px;
+        height: 335px;
+        object-fit: cover;
+        border-radius: 32px;
+    }
+    .My p{
+        margin-top: 20px;
+        width: 40%;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21.88px;
+        text-align: left;
     }
 }
 
@@ -653,3 +707,4 @@ footer button{
         padding:  0;
     }
 }
+

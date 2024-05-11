@@ -12,17 +12,25 @@
     font-family: 'El Messiri';
 }
 
+section{
+    max-width: 2500px;
+}
+
 main{
     background: #222222;
-    display: grid;
-    gap: 50px;
     margin-bottom: 8px;
-    padding-bottom: 85px;
+    padding-bottom: 3%;
 }
+
 
 main > div{
     display: flex;
     justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+main > div img{
+    width: 90%;
 }
 
 main > img{
@@ -77,13 +85,106 @@ h2{
     font-weight: 700;
     line-height: 100.03px;
     text-align: center;
-    padding-top: 117px;
-    padding-bottom: 20px;
-    margin-bottom: -50px;
+    padding-top: 100px;
+    padding-bottom: 40px;
 }
+
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.picture{
+    text-align: center;
+}
+
+.image{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
 
 /* конец общих стилевых решений */
 
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 3s;
+    z-index: 5;
+    display: none;
+}
+
+.osnova{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-124%);
+    width: 60%;
+    height: 30%;
+    min-width: 210px;
+    background: rgba(34, 34, 34, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    z-index: 6;
+}
+.osnova p{
+    text-align: center;
+}
+.osnova p a{
+    color: white;
+}
+.osnova button{
+    width: 185px;
+    height: 17px;
+}
+.osnova button a{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15.63px;
+}
+.osnova > div{
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+.osnova .butons1{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.osnova > div > a{
+    position: absolute;
+    width: 79px;
+    height: 66px;
+}
+.osnova > div > img{
+    position: absolute;
+    right: 5%;
+    top: 12px;
+}
+.osnova > a img{
+    width: 100%;
+    height: 100%;
+    /* display: inline-block; */
+}
 
 /* хедер сайта */
 
@@ -103,12 +204,20 @@ header > a
     left: 0;
 }
 
+.header{
+    width: 60%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+}
+
 header .butons
 {
+    width: 100%;
+    max-width: 720px;
     height: 120px;
     display: flex;
     flex-wrap: wrap;
-    width: 712px;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -117,19 +226,20 @@ header .butons
 
 header button
 {
-    width: 350px;
+    width: 45%;
+    max-width: 320px;
     height: 52px;
 }
 
 header button:first-child
 {
-    max-width: 712px;
     width: 100%;
+    max-width: 720px;
 }
 
 header p
 {
-    font-size: 64px;
+    font-size: 30em;
     font-weight: 700;
     line-height: 100.03px;
     text-align: left;
@@ -140,11 +250,6 @@ header p
 
 
 
-.egypt{
-    display: grid;
-    gap: 72px;
-}
-
 .egypt .text{
     display: flex;
     justify-content: space-around;
@@ -153,25 +258,18 @@ header p
 
 .egypt .text > p{
     text-align: left;
-    width: 836px;
+    width: 50%;
+    max-width: 836px;
 }
 
-.egypt .picture > p{
-    text-align: center;
-}
-
-.egypt .image{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
 
 
 
 
 .greece{
-    display: grid;
-    gap: 72px;
+    /* display: grid;
+    gap: 72px; */
+
 }
 
 .greece .text{
@@ -183,26 +281,19 @@ header p
 
 .greece .text > p{
     text-align: right;
-    width: 737px;
+    width: 50%;
+    max-width: 836px;
 }
 
-.greece .picture > p{
-    text-align: center;
-}
 
-.greece .image{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
 
 
 
 
 
 .paris{
-    display: grid;
-    gap: 72px;
+    /* display: grid;
+    gap: 72px; */
 }
 
 .paris .text{
@@ -213,18 +304,11 @@ header p
 
 .paris .text > p{
     text-align: left;
-    width: 914px;
+    width: 50%;
+    max-width: 836px;
 }
 
-.paris .picture > p{
-    text-align: center;
-}
 
-.paris .image{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
 
 
 
@@ -263,4 +347,175 @@ footer button{
     font-weight: 700;
     line-height: 62.52px;
     margin-right: 79px;
+}
+
+
+
+@media (min-width:1500px) {
+    .header{
+        width: 60%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width:2200px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo{
+        width: 166px;
+        height: 139px;  
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    header{
+        width: 100%;
+        height: auto;
+    }
+    header .logo{
+        left: auto;
+        right: 0;
+    }
+    .burger_menu{
+        position: absolute;
+        top: 36px;
+        left: 44px;
+        display: grid;
+        gap: 3px;
+    }
+    .burger_menu > div{
+        width: 43px;
+        height: 8px;
+        background: rgba(217, 217, 217, 1);
+    }
+    .header{
+        display: none;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.01px;
+    }
+
+    img{
+        /* max-width: 250px; */
+        max-height: 200px;
+        /* width: 86%;
+        height: 90%; */
+    }
+
+    h2{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 37.51px;
+        padding-top: 20%;
+    }
+
+    div img + p{
+        width: 100%;
+    }
+    main > div img{
+        width: 90%;
+        max-width: max-content;
+    }
+
+    footer{
+        padding: 10px 0 10px 0;
+    }
+    footer p{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25.01px;
+        text-align: center;
+    }
+    footer div{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    footer button{
+        width: 121px;
+        height: 33px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21.88px;
+        text-align: center;        
+        margin-right: 10px;
+        padding: 7px 0 0 0;
+    }
+    .footer{
+        width: 60%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px){
+    .text{
+        align-items: normal !important;
+    }
+
+    .logo{
+        width: 79px;
+        height: 66px;
+    }
+
+    .burger_menu{
+        top: 20px;
+        left: 16px;
+    }
+
+    .burger_menu > div{
+        width: 21px;
+        height: 5px;
+    }
+
+    p{
+        font-size: 10px !important;
+        font-weight: 400;
+        line-height: 15.63px;
+    }
+
+    h2{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18.76px;
+    }
+
+    img{
+        max-height: 105px;
+    }
+
+    .image img{
+        max-height: 100px;
+    }
+
+    footer{
+        padding: 10px 0 10px 0;
+    }
+    footer p{
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 15.63px;
+        text-align: center;
+    }
+    footer div{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    footer button{
+        width: 98px;
+        height: 19px;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 15.63px;     
+        padding: 3px 0 0 0;
+    }
 }

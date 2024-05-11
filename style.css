@@ -130,8 +130,17 @@ header > div > div:first-child > a
     left: 0;
 }
 
+.header{
+    width: 60%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+}
+
 header .butons
 {
+    width: 100%;
+    max-width: 720px;
     height: 120px;
     display: flex;
     flex-wrap: wrap;
@@ -152,6 +161,20 @@ header button:first-child
     max-width: 712px;
     width: 100%;
 }
+
+header button
+{
+    width: 45%;
+    max-width: 320px;
+    height: 52px;
+}
+
+header button:first-child
+{
+    width: 100%;
+    max-width: 720px;
+}
+
 
 .divNav{
     height: 70%;
@@ -267,13 +290,24 @@ nav button{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 .timeMachine{
-    height: 768px;
     background-color: #222222;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 20px 0 30px 0;
 }
 
 .timeMachine h2{
@@ -282,16 +316,18 @@ nav button{
 }
 
 .timeMachine p{
-    width: 1022px;
+    width: 990px;
     text-align: left;
     color: white;
 }
 
 .timeMachine div{
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 
@@ -339,11 +375,12 @@ nav button{
 
 
 .Journeys{
-    height: 835px;
+    height: auto;
     background: #222222;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 20px 0 30px 0;
 }
 
 .Journeys h2{
@@ -352,8 +389,10 @@ nav button{
 }
 
 .Journeys > div{
+    padding-top: 10px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .Journeys p{
@@ -374,16 +413,19 @@ nav button{
 
 
 .question{
-    height: 835px;
+    height: auto;
     background: #222222;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 20px 0 30px 0;
 }
 
 .question > div{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 100px;
 }
 
 .question form{
@@ -520,7 +562,27 @@ footer button{
     margin-right: 79px;
 }
 
+@media (min-width: 992px) and (max-width: 1450px) {
+    .ourCalculations div{
+        width: 90%;
+        height: auto;
+    }
+    .ourCalculations{
+        height: auto;
+        padding-bottom: 30px;
+    }
 
+    .question{
+        padding: 20px 0 130px 0;
+    }
+}
+
+@media (min-width:1500px) {
+    .header{
+        width: 60%;
+        margin-left: 0;
+    }
+}
 
 @media (min-width: 320px) and (max-width: 992px){
     body{
@@ -687,15 +749,6 @@ footer button{
         gap: 15px;
         justify-content: space-around;
     }
-    .Journeys > div > div:nth-child(3){
-        width: 85%;
-    }
-    .Journeys > div div:nth-child(3) img{
-        width: 100%;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 22px;
-    }
     .Journeys img{
         height: 114px;
         width: auto;
@@ -780,8 +833,8 @@ footer button{
         height: auto;
     }
     footer div{
-        width: 80%;
-        justify-content: space-evenly;
+        width: 55%;
+        justify-content: space-between;
     }
     footer button{
         width: 98px;
@@ -794,15 +847,7 @@ footer button{
     }
 }
 
-@media (min-width: 400px) and (max-width: 992px) {
-    .Journeys > div{
-        width: 80%;
-        justify-content: space-between;
-    }
-    .Journeys > div > div:nth-child(3){
-        width: 100%;
-    }
-}
+
 
 @media (min-width: 588px) and (max-width: 992px){
     .Journeys > div > div:nth-child(3){
@@ -899,6 +944,7 @@ footer button{
     .timeMachine div{
         flex-direction: row-reverse;
         align-items: flex-start;
+        flex-wrap: nowrap;
     }
     .timeMachine div img{
         width: 92%;
@@ -953,7 +999,7 @@ footer button{
         font-weight: 400;
         line-height: 21.88px;
         text-align: center;
-        padding: 0 20% 0 20%;
+        padding: 0 10% 0 10%;
     }
     .Journeys img{
         width: 100%;
