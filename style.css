@@ -220,6 +220,7 @@ nav p{
 
 nav button{
     width: 481px;
+    max-width: none;
     height: 67px;
     line-height: 62.52px;
     padding-top: 5px;
@@ -241,6 +242,7 @@ nav button{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
     display: none;
     z-index: 6;
 }
@@ -425,7 +427,7 @@ nav button{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 150px;
 }
 
 .question form{
@@ -498,6 +500,7 @@ border-top: 6px solid #555; */
 
 .question h2{
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .question .img{
@@ -767,6 +770,9 @@ footer button{
         height: auto;
         padding: 15px 0 20px 0;
     }
+    .question h2{
+        margin: 0;
+    }
     .question form{
         gap: 5px;
         font-size: 10px;
@@ -1012,6 +1018,9 @@ footer button{
     .question{
         padding: 4% 0 5% 0;
     }
+    .question h2{
+        margin-bottom: 50px;
+    }
     .question .img{
         display: block;
         width: 251px;
@@ -1042,6 +1051,21 @@ footer button{
         width: 111px;
         height: 28px;
         padding: 4px 0 0 0;
+    }
+}
+
+@media (min-width: 2500px) {
+    .Journeys > div{
+        justify-content: center;
+        gap: 200px;
+    }
+    .divNav{
+        justify-content: center;
+        gap: 200px;
+    }
+    .question > div{
+        justify-content: center;
+        gap: 200px;
     }
 }
 

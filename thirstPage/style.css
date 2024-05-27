@@ -155,11 +155,14 @@ header p
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
     display: none;
     z-index: 6;
 }
 .osnova p{
     text-align: center;
+    font-size: 15px !important;
+    line-height: 20px;
 }
 .osnova p a{
     color: white;
@@ -220,6 +223,7 @@ header p
     justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 .My p{
@@ -708,3 +712,14 @@ footer button{
     }
 }
 
+@media (min-width: 2500px) {
+    .My div{
+        justify-content: center;
+        gap: 130px;
+    }
+
+    .rezume > div{
+        justify-content: center;
+        gap: 130px;
+    }
+}

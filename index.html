@@ -117,11 +117,11 @@
         <div class="question block" id="question">
             <h2>Задайте свой вопрос!</h2>
             <div>
-                <form action="#" method="post">
-                    <input placeholder="Введите имя..." type="text" name="userName" required>
-                    <input placeholder="Введите почту..." type="email" name="userEmail" required>
+                <form action="#" method="post" class="form">
+                    <input placeholder="Введите имя..." type="text" name="userName" class="userName field" required>
+                    <input placeholder="Введите почту..." type="email" name="userEmail" class="userEmail field" required>
                     <div class="custom-select">
-                    <select name="quest" id="custom-select">
+                    <select name="quest" class="custom-select field">
                         <option value="" disabled selected hidden >Выберите категорию вопроса...</option> <!--что-то вроде placeholder для select-->
                         <option value="quest1">Что произойдет, если изменить прошлое с помощью машины времени?</option>
                         <option value="quest2">Можно ли создать парадокс времени при путешествии в прошлое?</option>
@@ -131,9 +131,9 @@
                         <option value="quest6">Как путешествие во времени влияет на психологию человека?</option>
                     </select>
                     <img src="./assets/img/arrow.svg" alt="">
-                </div>
-                    <textarea placeholder="Введите ваш вопрос..." name="" id="" cols="30" rows="10" required></textarea>
-                    <button type="submit">Отправить</button>
+                    </div>
+                    <textarea class="question field" placeholder="Введите ваш вопрос..." name="question" cols="30" rows="10" required></textarea>
+                    <input type="submit" class="validateBtn" value="validateBtn">
                 </form>
                 <div class="img">
                     <img class="upperRight" src="./assets/img/image8.png" alt="Здесь должна была быть картинка">
@@ -153,6 +153,7 @@
     </div>
     <button><a href="./thirstPage/index.html#rezume">Принять участие</a></button>
 </footer>
+<script src="code.js"></script>
 
 <script>
     document.querySelector('form').addEventListener('submit', event => {
