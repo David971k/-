@@ -35,9 +35,9 @@ var checkFieldsPresence = function () {
 
 
 
-form.addEventListener('submit', function (event) {
+form.addEventListener("submit", function (event) {
+  console.log(5)
   event.preventDefault()
-  console.log(5);
   removeValidation()
 
   checkFieldsPresence()

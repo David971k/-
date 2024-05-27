@@ -76,8 +76,8 @@
                 </div>
                 <div class="forma">
                     <form action="#" method="post" enctype="multipart/form-data">
-                        <input type="file" id="file" accept=".txt, .doc, .docx" required>
-                        <label for="file">Прикрепите файл... <img src="../assets/img/file.png" alt=""></label>
+                        <input type="file" id="file" name="file" accept=".txt, .doc, .docx" required data-multiple-caption="{count} файлов выбрано" multiple>
+                        <label for="file"><span>Прикрепите файл...</span> <img src="../assets/img/file.png" alt=""></label>
                         <button type="submit">Отправить</button>
                     </form>
                     <p class="blockdiv2">
@@ -106,7 +106,7 @@
             alert('Форма отправлена!');
         });
     </script>
-
+    <script src="./script.js"></script>
     <script src="../burger_menu_click.js"></script>
 </body>
 </html>

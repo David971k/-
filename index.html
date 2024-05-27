@@ -117,7 +117,7 @@
         <div class="question block" id="question">
             <h2>Задайте свой вопрос!</h2>
             <div>
-                <form action="#" method="post" class="form">
+                <form action="#" method="post" class="form" novalidate>
                     <input placeholder="Введите имя..." type="text" name="userName" class="userName field" required>
                     <input placeholder="Введите почту..." type="email" name="userEmail" class="userEmail field" required>
                     <div class="custom-select">
@@ -133,7 +133,7 @@
                     <img src="./assets/img/arrow.svg" alt="">
                     </div>
                     <textarea class="question field" placeholder="Введите ваш вопрос..." name="question" cols="30" rows="10" required></textarea>
-                    <input type="submit" class="validateBtn" value="validateBtn">
+                    <button type="submit" class="validateBtn">Отправить</button>
                 </form>
                 <div class="img">
                     <img class="upperRight" src="./assets/img/image8.png" alt="Здесь должна была быть картинка">
@@ -153,7 +153,7 @@
     </div>
     <button><a href="./thirstPage/index.html#rezume">Принять участие</a></button>
 </footer>
-<script src="code.js"></script>
+<script src="./code.js"></script>
 
 <script>
     document.querySelector('form').addEventListener('submit', event => {
